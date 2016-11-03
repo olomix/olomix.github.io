@@ -1,0 +1,30 @@
+@import url("../bootstrap-3.1.1-dist/css/bootstrap.css");
+@import url("../bootstrap-3.1.1-dist/css/bootstrap-theme.css");
+@import url("../icomoon/style.css");
+
+body {
+    padding-top: 20px;
+}
+
+.footer {
+    background-color: #F5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.right-sidebar {
+    margin-top: 40px;
+}
+
+a [class^="icomoon-"], a [class*=" icomoon-"], a [class^="glyphicon-"], a [class*=" glyphicon-"] {
+    color: #333;
+}
+
+.article-title a {
+    color: #333;
+}
+
+.main-content {
+    margin-bottom: 40px;
+}
