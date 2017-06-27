@@ -77,7 +77,7 @@
 
 <span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">patterns</span><span class="p">(</span>
     <span class="s1">&#39;&#39;</span><span class="p">,</span>
-    <span class="n">url</span><span class="p">(</span><span class="s1">r&#39;^$&#39;</span><span class="p">,</span> <span class="n">MeasurementForm</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span>
+    <span class="n">url</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^$&#39;</span><span class="p">,</span> <span class="n">MeasurementForm</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span>
         <span class="n">name</span><span class="o">=</span><span class="s1">&#39;anthropometry_measurement_create&#39;</span><span class="p">),</span>
     <span class="p">)</span>
 </pre></div>
@@ -92,9 +92,9 @@
 
 <span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">patterns</span><span class="p">(</span>
     <span class="s1">&#39;&#39;</span><span class="p">,</span>
-    <span class="n">url</span><span class="p">(</span><span class="s1">r&#39;^$&#39;</span><span class="p">,</span> <span class="n">MeasurementForm</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> 
+    <span class="n">url</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^$&#39;</span><span class="p">,</span> <span class="n">MeasurementForm</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> 
         <span class="n">name</span><span class="o">=</span><span class="s1">&#39;anthropometry_measurement_create&#39;</span><span class="p">),</span>
-    <span class="n">url</span><span class="p">(</span><span class="s1">r&#39;^user/$&#39;</span><span class="p">,</span> <span class="n">RedirectView</span><span class="o">.</span><span class="n">as_view</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;/anthropometry/&#39;</span><span class="p">)),</span>
+    <span class="n">url</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^user/$&#39;</span><span class="p">,</span> <span class="n">RedirectView</span><span class="o">.</span><span class="n">as_view</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;/anthropometry/&#39;</span><span class="p">)),</span>
 <span class="p">)</span>
 </pre></div>
 
@@ -113,9 +113,9 @@
 
 <span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">patterns</span><span class="p">(</span>
     <span class="s1">&#39;&#39;</span><span class="p">,</span>
-    <span class="n">url</span><span class="p">(</span><span class="s1">r&#39;^$&#39;</span><span class="p">,</span> <span class="n">MeasurementForm</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> 
+    <span class="n">url</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^$&#39;</span><span class="p">,</span> <span class="n">MeasurementForm</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> 
         <span class="n">name</span><span class="o">=</span><span class="s1">&#39;anthropometry_measurement_create&#39;</span><span class="p">),</span>
-    <span class="n">url</span><span class="p">(</span><span class="s1">r&#39;^user/$&#39;</span><span class="p">,</span> <span class="n">MeasurementFormRedirect</span><span class="o">.</span><span class="n">as_view</span><span class="p">()),</span>
+    <span class="n">url</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^user/$&#39;</span><span class="p">,</span> <span class="n">MeasurementFormRedirect</span><span class="o">.</span><span class="n">as_view</span><span class="p">()),</span>
 <span class="p">)</span>
 </pre></div>
 
@@ -127,9 +127,9 @@
 <p>В рот мне ноги, простите за мой французский! Как вообще так случилось, что я только сейчас встретил эту фукнцию. Оказывается мир не такой плохой, как я про него думал. Эта функция позволяет обращаться к именованным адресам прямо из urls.py, т.к. непосредственное вычисления адреса будет происходить не сразу, а когда оно реально понадобится. Теперь никаких новых классов во views.py, и все записывается одной строчкой в urls.py</p>
 <div class="highlight"><pre><span></span><span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">patterns</span><span class="p">(</span>
     <span class="s1">&#39;&#39;</span><span class="p">,</span>
-    <span class="n">url</span><span class="p">(</span><span class="s1">r&#39;^$&#39;</span><span class="p">,</span> <span class="n">MeasurementForm</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> 
+    <span class="n">url</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^$&#39;</span><span class="p">,</span> <span class="n">MeasurementForm</span><span class="o">.</span><span class="n">as_view</span><span class="p">(),</span> 
         <span class="n">name</span><span class="o">=</span><span class="s1">&#39;anthropometry_measurement_create&#39;</span><span class="p">),</span>
-    <span class="n">url</span><span class="p">(</span><span class="s1">r&#39;^user/$&#39;</span><span class="p">,</span> <span class="n">RedirectView</span><span class="o">.</span><span class="n">as_view</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">reverse_lazy</span><span class="p">(</span><span class="s1">&#39;anthropometry_measurement_create&#39;</span><span class="p">))),</span>
+    <span class="n">url</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^user/$&#39;</span><span class="p">,</span> <span class="n">RedirectView</span><span class="o">.</span><span class="n">as_view</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">reverse_lazy</span><span class="p">(</span><span class="s1">&#39;anthropometry_measurement_create&#39;</span><span class="p">))),</span>
 <span class="p">)</span>
 </pre></div>
 

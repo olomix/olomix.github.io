@@ -154,14 +154,14 @@ msgfmt --java2 -d src/main/resources -r <span class="s1">&#39;example.messages&#
 
 
 <p>Теперь когда нам требуется перевод мы можем делать</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">static</span> <span class="n">example</span><span class="o">.</span><span class="na">I18NUtils</span><span class="o">.</span><span class="na">_</span><span class="o">;</span>
+<div class="highlight"><pre><span></span><span class="kn">import static</span> <span class="nn">example.I18NUtils._</span><span class="o">;</span>
 <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">_</span><span class="o">(</span><span class="s">&quot;Hello World!&quot;</span><span class="o">));</span>
 </pre></div>
 
 
 <p>Что очень похоже на вызов gettext из C/C++ или Python.</p>
 <p>К сожалению, вызов ngettext не так похож и слегка многословен. Мы можем использовать ngettext в паре с MessageFormat для форматирования сообщений.</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">static</span> <span class="n">example</span><span class="o">.</span><span class="na">I18NUtils</span><span class="o">.</span><span class="na">ngettext</span>
+<div class="highlight"><pre><span></span><span class="kn">import static</span> <span class="nn">example.I18NUtils.ngettext</span>
 <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">MessageFormat</span><span class="o">.</span><span class="na">format</span><span class="o">(</span>
         <span class="n">ngettext</span><span class="o">(</span>
                 <span class="s">&quot;Something random happened {0} time&quot;</span><span class="o">,</span>
